@@ -20,5 +20,5 @@ return [
     (new Extend\Frontend('admin'))
         ->js(__DIR__.'/js/dist/admin.js')
         ->css(__DIR__.'/less/admin.less'),
-    Extend\Locales::add(__DIR__.'/locale');
+     new Extend\Locales(__DIR__ . '/resources/locale'),
 ];
